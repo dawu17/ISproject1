@@ -1,9 +1,63 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Web Form Page</title>
+    <meta charset="utf-8" />
 </head>
 <body>
+    <header> <p align="center"><strong> Wu, chihwei Homework 2 <storng></p>
+             <hr color="green" size="8">
+        <nav>
+            <a href ="Index.html">Home</a> <a href="Form.html">Web Form Demo</a> <a href ="info.html">About Me </a>
+        </nav>
 
+    </header>
+    <p>
+        <h1>Welcome to my Web Form</br></h1>
+        <h2> demo form for hotel room reservation
+        </br></h2>
+
+    </p>
+    <form method="post" action="Form.html">
+    <p>
+
+    <fieldset>
+        <legend>Customer Information</legend>
+            <p>
+                <label>Full name: <input type="text" id="full name" name="full name" required placeholder="Firstname Lastname"></label></br>
+                <label>Email Address: <input type="email" id="email" name="email" required ></label></br>
+                <label>Phone: <input type="tel" id="tel" name="tel" required ></label></br>
+            </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>RoomInformation</legend>
+            <p>
+                <label>Arrival date: <input type="date" id="datearri" name="datearri"></label></br>
+                <label>Arrival time: <input type="time" name="timearri"></label></br>
+                <label>Select a room type:
+                    <select>
+                        <option value="L" selected >Luxury</option>
+                        <option value="S">Standard</option>
+                        <option value="E">Economic</option>
+                    </select>
+                </label></br>
+                <label>Number of nights <input type="number" max="30" min="1" value ="1"></label></br>
+                <label>Number of guests <input type="number" max="3" min="1" value ="0"></label>
+            </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Other Information</legend>
+            <p>
+                <label>Promo Code: <input type="text" maxlength ="4"></label></br>
+                <label>Special Note: <textarea name="Note" cols="40" rows="5" placeholder="Enter your special notes here"></textarea></label>
+
+            </p>
+    </fieldset>
+        <p><input type="reset" value="Clear Form" />
+           <input type="submit" value="Request Reservation">
+
+            </form>
 </body>
 </html>
