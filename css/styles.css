@@ -21,7 +21,7 @@ a:hover
 
 nav a
 {
-    margin: 2em;
+    margin: 2em 2em 2em 2em;
         
 }
 
@@ -29,6 +29,7 @@ nav a
 span
 {
     width: 20px;
+    margin-right :20px;
 }
 
 form
@@ -50,4 +51,30 @@ h2
 h1
 {
     color: blue;
+}
+
+
+footer
+{
+    font-size: 12px;
+}
+
+
+img
+{
+    float: right;
+}
+
+
+hr.topbar
+{
+    color : #00FF00 ;
+    background-color :#00FF00;
+    height:8px;
+}
+
+hr.footbar
+{
+    border-top: double;
+    padding-top: 5px;
 }

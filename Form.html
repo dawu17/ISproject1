@@ -3,10 +3,15 @@
 <head>
     <title>Web Form Page</title>
     <meta charset="utf-8" />
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+
+
+
+
 </head>
 <body>
     <header> <p align="center"><strong> Wu, chihwei Homework 2 <storng></p>
-             <hr color="green" size="8">
+             <hr class="topbar" />
         <nav>
             <a href ="Index.html">Home</a> <a href="Form.html">Web Form Demo</a> <a href ="info.html">About Me </a>
         </nav>
@@ -34,7 +39,7 @@
         <legend>RoomInformation</legend>
             <p>
                 <label>Arrival date: <input type="date" id="datearri" name="datearri"></label></br>
-                <label>Arrival time: <input type="time" name="timearri"></label></br>
+                <label>Arrival time: <input type="time" name="timearri" id="timearri"></label></br>
                 <label>Select a room type:
                     <select>
                         <option value="L" selected >Luxury</option>
@@ -42,16 +47,16 @@
                         <option value="E">Economic</option>
                     </select>
                 </label></br>
-                <label>Number of nights <input type="number" max="30" min="1" value ="1"></label></br>
-                <label>Number of guests <input type="number" max="3" min="1" value ="0"></label>
+                <label>Number of nights <input type="number" max="30" min="1" value ="1" id="nights" name="nights"></label></br>
+                <label>Number of guests <input type="number" max="3" min="1" value ="0" id="guests" name="guest"></label>
             </p>
     </fieldset>
 
     <fieldset>
         <legend>Other Information</legend>
             <p>
-                <label>Promo Code: <input type="text" maxlength ="4"></label></br>
-                <label>Special Note: <textarea name="Note" cols="40" rows="5" placeholder="Enter your special notes here"></textarea></label>
+                <label>Promo Code: <input type="text" maxlength ="4" id="promo" name="promo"></label></br>
+                <label>Special Note: <textarea name="Note" id="note" cols="40" rows="5" placeholder="Enter your special notes here"></textarea></label>
 
             </p>
     </fieldset>
@@ -61,3 +66,4 @@
             </form>
 </body>
 </html>
+
